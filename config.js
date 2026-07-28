@@ -18,29 +18,29 @@ const CONFIG = {
 
   // ── 메인 (히어로) ──
   groom: {
-    name: "신랑",
-    nameEn: "Groom",
-    father: "아버지",
-    mother: "어머니",
+    name: "신윤호",
+    nameEn: "Shin Yun Ho",
+    father: "신겸식",
+    mother: "곽희선",
     fatherDeceased: false,
     motherDeceased: false
   },
 
   bride: {
-    name: "신부",
-    nameEn: "Bride",
-    father: "아버지",
-    mother: "어머니",
+    name: "이혜빈",
+    nameEn: "Lee Hye Vin",
+    father: "이철수",
+    mother: "이연실",
     fatherDeceased: false,
     motherDeceased: false
   },
 
   wedding: {
-    date: "2026-05-09",
-    time: "13:00",
-    venue: "예식장 이름",
-    hall: "그랜드홀 5층",
-    address: "서울특별시 강남구 테헤란로 123",
+    date: "2026-12-19",
+    time: "15:30",
+    venue: "메리비아포레",
+    hall: "메리비아포레 웨딩홀 6층",
+    address: "대전광역시 서구 둔산중로 134번길 13",
     tel: "02-1234-5678",
     mapLinks: {
       kakao: "https://map.kakao.com/",
@@ -66,20 +66,20 @@ const CONFIG = {
   // ── 마음 전하실 곳 ──
   accounts: {
     groom: [
-      { role: "신랑", name: "홍길동", bank: "국민은행", number: "000-000-000000" },
-      { role: "아버지", name: "홍판서", bank: "신한은행", number: "000-000-000000" },
-      { role: "어머니", name: "김부인", bank: "우리은행", number: "000-000-000000" }
+      { role: "신랑", name: "신윤호", bank: "국민은행", number: "000-000-000000" },
+      { role: "아버지", name: "신겸식", bank: "신한은행", number: "000-000-000000" },
+      { role: "어머니", name: "곽희선", bank: "우리은행", number: "000-000-000000" }
     ],
     bride: [
-      { role: "신부", name: "김영희", bank: "하나은행", number: "000-000-000000" },
-      { role: "아버지", name: "김사장", bank: "기업은행", number: "000-000-000000" },
-      { role: "어머니", name: "이부인", bank: "농협은행", number: "000-000-000000" }
+      { role: "신부", name: "이혜빈", bank: "하나은행", number: "000-000-000000" },
+      { role: "아버지", name: "이철수", bank: "기업은행", number: "000-000-000000" },
+      { role: "어머니", name: "이연실", bank: "농협은행", number: "000-000-000000" }
     ]
   },
 
   // ── 링크 공유 시 나타나는 문구 ──
   meta: {
     title: "신랑 ♥ 신부 결혼합니다",
-    description: "2026년 5월 9일, 소중한 분들을 초대합니다."
+    description: "2026년 12월 19일, 소중한 분들을 초대합니다."
   }
 };
