@@ -474,7 +474,7 @@ a {
   position: relative;
   z-index: 2;
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-forest);
   padding: 0 var(--spacing-md) var(--spacing-lg);
   width: 100%;
 }
