@@ -472,7 +472,7 @@ a {
 
 .hero__content {
   position: absolute;
-  top: 8%;
+  top: 15%;
   left: 0;
   z-index: 2;
   text-align: center;
@@ -521,6 +521,7 @@ a {
   letter-spacing: 2px;
   opacity: 0.85;
   line-height: 1.6;
+  color: var(--color-white);
 }
 
 .hero__venue {
