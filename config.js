@@ -43,8 +43,8 @@ const CONFIG = {
     address: "대전광역시 서구 둔산중로 134번길 13",
     tel: "02-1234-5678",
     mapLinks: {
-      kakao: "https://map.kakao.com/",
-      naver: "https://map.naver.com/"
+      kakao: "https://map.kakao.com/?urlX=586980.9999999993&urlY=794884.0000000002&urlLevel=3&itemId=1411799605&q=%EB%A9%94%EB%A6%AC%EB%B9%84%EC%95%84%ED%8F%AC%EB%A0%88%EC%9B%A8%EB%94%A9%ED%99%80&srcid=1411799605&map_type=TYPE_MAP",
+      naver: "https://map.naver.com/p/search/%EB%A9%94%EB%A6%AC%EB%B9%84%EC%95%84%20%ED%8F%AC%EB%A0%88/place/1493067194?c=15.00,0,0,0,dh&placePath=%2Fhome%3Fbk_query%3D%EB%A9%94%EB%A6%AC%EB%B9%84%EC%95%84%20%ED%8F%AC%EB%A0%88%26entry%3Dbmp%26from%3Dmap%26fromPanelNum%3D2%26timestamp%3D202608171525%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EB%A9%94%EB%A6%AC%EB%B9%84%EC%95%84%20%ED%8F%AC%EB%A0%88"
     }
   },
 
