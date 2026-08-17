@@ -471,23 +471,12 @@ a {
 }
 
 .hero__content {
-  position: absolute;
-  top: 15%;
-  left: 0;
+  position: relative;
   z-index: 2;
   text-align: center;
-  color: var(--color-forest);
-  padding: 0 var(--spacing-md);
+  color: var(--color-white);
+  padding: 0 var(--spacing-md) var(--spacing-lg);
   width: 100%;
-}
-
-.hero__info {
-  position: absolute;
-  bottom: 150px;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  text-align: center;
 }
 
 .hero__label {
@@ -498,15 +487,25 @@ a {
   text-transform: uppercase;
   margin-bottom: var(--spacing-sm);
   opacity: 0.8;
+  text-shadow:
+    -1px -1px 0 #4A5E3B,
+     1px -1px 0 #4A5E3B,
+    -1px  1px 0 #4A5E3B,
+     1px  1px 0 #4A5E3B;
 }
 
 .hero__names {
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 2.7rem;
-  font-weight: 400;
-  letter-spacing: 5px;
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 8px;
   margin-bottom: var(--spacing-md);
   line-height: 1.4;
+  text-shadow:
+    -1px -1px 0 #4A5E3B,
+     1px -1px 0 #4A5E3B,
+    -1px  1px 0 #4A5E3B,
+     1px  1px 0 #4A5E3B;
 }
 
 .hero__divider {
@@ -523,7 +522,6 @@ a {
   letter-spacing: 2px;
   opacity: 0.85;
   line-height: 1.6;
-  color: var(--color-white);
 }
 
 .hero__venue {
@@ -1180,9 +1178,9 @@ a {
   }
 
   .hero__names {
-   font-size: 3.2rem;
-   letter-spacing: 7px;
- }
+    font-size: 2.5rem;
+    letter-spacing: 12px;
+  }
 
   .hero__label {
     font-size: 0.9375rem;
