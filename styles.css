@@ -471,11 +471,13 @@ a {
 }
 
 .hero__content {
-  position: relative;
+  position: absolute;
+  top: 8%;
+  left: 0;
   z-index: 2;
   text-align: center;
   color: var(--color-forest);
-  padding: 0 var(--spacing-md) var(--spacing-lg);
+  padding: 0 var(--spacing-md);
   width: 100%;
 }
 
