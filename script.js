@@ -730,18 +730,23 @@
     initScrollAnimations();
 
     // Set story text immediately (photos load async)
-    $('#storyTitle').textContent = CONFIG.story.title;
-    $('#storyContent').textContent = CONFIG.story.content;
 
     // Auto-detect story and gallery images in parallel
-    const [storyImages, galleryImages] = await Promise.all([
-      loadImagesFromFolder('story'),
-      loadImagesFromFolder('gallery')
-    ]);
-
-    // Render sections with discovered images
-    initStory(storyImages);
-    initGallery(galleryImages);
+    const galleryImages = [
+     'images/gallery/1.jpg',
+     'images/gallery/2.jpg',
+     'images/gallery/3.jpg',
+     'images/gallery/4.jpg',
+     'images/gallery/5.jpg',
+     'images/gallery/6.jpg',
+     'images/gallery/7.jpg',
+     'images/gallery/8.jpg',
+     'images/gallery/9.jpg',
+     'images/gallery/10.jpg',
+     'images/gallery/11.jpg',
+     'images/gallery/12.jpg'
+   ];
+   initGallery(galleryImages);
   }
 
   if (document.readyState === 'loading') {
