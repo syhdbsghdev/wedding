@@ -483,19 +483,11 @@ a {
 
 .hero__info {
   position: absolute;
-  top: 56%;
+  bottom: 150px;
   left: 0;
   width: 100%;
-}
-
-@media (max-width: 480px) {
-  .hero__info {
-    top: 52%;
-  }
-
-  .countdown {
-    padding-top: 1rem;
-  }
+  z-index: 2;
+  text-align: center;
 }
 
 .hero__label {
