@@ -1007,6 +1007,56 @@ a {
   border-color: var(--color-sage);
 }
 
+
+.hall-notice {
+  background: var(--color-cream);
+}
+
+.hall-notice__box {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(139, 158, 126, 0.25);
+  border-radius: var(--radius-md);
+}
+
+.hall-notice__item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hall-notice__item:first-child {
+  padding-top: 0;
+}
+
+.hall-notice__item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.hall-notice__item strong {
+  display: block;
+  margin-bottom: 0.4rem;
+
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  color: var(--color-forest);
+}
+
+.hall-notice__item p {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.8;
+
+  color: var(--color-text-light);
+  white-space: pre-line;
+}
+
 /* ═══════════════════════════════════════════
    Buttons
    ═══════════════════════════════════════════ */
@@ -1138,6 +1188,38 @@ a {
     opacity: 1;
     transform: scale(1.2);
   }
+}
+
+.bgm-toggle {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + var(--safe-bottom));
+  z-index: 500;
+
+  min-width: 64px;
+  height: 38px;
+  padding: 0 14px;
+
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+
+  background: rgba(74, 94, 59, 0.82);
+  color: #ffffff;
+
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.bgm-toggle.is-off {
+  background: rgba(60, 60, 60, 0.65);
+  opacity: 0.8;
 }
 
 /* ═══════════════════════════════════════════

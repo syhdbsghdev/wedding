@@ -124,7 +124,40 @@
   /* ═══════════════════════════════════════════
      Curtain
      ═══════════════════════════════════════════ */
+	
+function initBgm() {
+  const bgm = document.getElementById('bgm');
+  const toggleBtn = document.getElementById('bgmToggle');
 
+  if (!bgm || !toggleBtn) return;
+
+  bgm.volume = 0.45;
+
+  function updateButton() {
+    if (bgm.paused) {
+      toggleBtn.textContent = '♪ OFF';
+      toggleBtn.classList.add('is-off');
+    } else {
+      toggleBtn.textContent = '♪ ON';
+      toggleBtn.classList.remove('is-off');
+    }
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    if (bgm.paused) {
+      bgm.play().catch(() => {});
+    } else {
+      bgm.pause();
+    }
+
+    updateButton();
+  });
+
+  bgm.addEventListener('play', updateButton);
+  bgm.addEventListener('pause', updateButton);
+
+  updateButton();
+}
   function initCurtain() {
     const curtain = $('#curtain');
     const btn = $('#curtainBtn');
@@ -140,12 +173,19 @@
     namesEl.textContent = `${CONFIG.groom.name}  &  ${CONFIG.bride.name}`;
 
     btn.addEventListener('click', () => {
-      curtain.classList.add('is-open');
-      document.body.classList.remove('no-scroll');
-      setTimeout(() => {
-        curtain.classList.add('is-hidden');
-        initFallingLeaves();
-      }, 1400);
+      const bgm = document.getElementById('bgm');
+
+  if (bgm) {
+    bgm.play().catch(() => {});
+  }
+
+  curtain.classList.add('is-open');
+  document.body.classList.remove('no-scroll');
+
+  setTimeout(() => {
+    curtain.classList.add('is-hidden');
+    initFallingLeaves();
+  }, 1400);
     });
 
     document.body.classList.add('no-scroll');
@@ -713,6 +753,7 @@
 
   async function init() {
     setMetaTags();
+    initBgm();
     initCurtain();
     initHero();
     initCountdown();
