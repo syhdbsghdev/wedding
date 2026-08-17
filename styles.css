@@ -483,9 +483,19 @@ a {
 
 .hero__info {
   position: absolute;
-  top: 65vh;
+  top: 56%;
   left: 0;
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .hero__info {
+    top: 52%;
+  }
+
+  .countdown {
+    padding-top: 1rem;
+  }
 }
 
 .hero__label {
@@ -499,10 +509,10 @@ a {
 }
 
 .hero__names {
-  font-family: var(--font-serif);
-  font-size: 2rem;
-  font-weight: 200;
-  letter-spacing: 8px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 2.7rem;
+  font-weight: 400;
+  letter-spacing: 5px;
   margin-bottom: var(--spacing-md);
   line-height: 1.4;
 }
@@ -1178,9 +1188,9 @@ a {
   }
 
   .hero__names {
-    font-size: 2.5rem;
-    letter-spacing: 12px;
-  }
+   font-size: 3.2rem;
+   letter-spacing: 7px;
+ }
 
   .hero__label {
     font-size: 0.9375rem;
